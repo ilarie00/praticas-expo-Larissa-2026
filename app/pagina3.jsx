@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View } from 'react-native';
-import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
 import '@/global.css';
 import { Button, ButtonText } from "@/components/ui/button";
 import { Divider } from '@/components/ui/divider';
@@ -14,19 +13,19 @@ export default function Pagina3() {
         <Divider className="my-3 w-52 bg-gray-600" />
         
         {/* Usando router.push para avançar para a página 1 em vez de voltar */}
-        <Button className="bg-fuchsia-300" onPress={() => router.push('/pagina1')}>
+        <Button className="bg-fuchsia-300" onPress={() => router.push('/Pagina1')}>
           <ButtonText className='font-bold text-white'>Primeira Página</ButtonText>
         </Button>
         
         <Divider className="my-3 w-20 bg-gray-600" />
         
-        <Button className="bg-indigo-600" onPress={() => router.push('/pagina2')}>
+        <Button className="bg-indigo-600" onPress={() => router.push('/Pagina2')}>
           <ButtonText className='font-bold text-white'>Segunda Página</ButtonText>
         </Button>
         
         <Divider className="my-3 w-20 bg-gray-600" />
         
-        <Button className="bg-slate-800" onPress={() => router.push('/pagina3')}>
+        <Button className="bg-slate-800" onPress={() => router.push('/Pagina3')}>
           <ButtonText className='font-bold text-white'>Terceira Página</ButtonText>
         </Button>
         
